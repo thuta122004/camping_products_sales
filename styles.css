@@ -243,7 +243,7 @@ body {
 }
 
 .social-links a:hover {
-  color: var(--primary-color) !important;
+  color: var(--accent-color) !important;
   transform: translateY(-2px);
 }
 
@@ -259,12 +259,15 @@ body {
 .border-white-25 {
   border-color: var(--border-white-25) !important;
 }
+.text-forest {
+  color: var(--primary-dark) !important;
+}
 
 /* Category Icons */
 .category-icon {
   padding: 20px;
   border-radius: 50%;
-  background: rgba(79, 70, 229, 0.2);
+  background: var(--glass-bg);
   display: inline-block;
   margin-bottom: 1rem;
 }

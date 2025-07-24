@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Camping Products Sales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="index.html">
+                <i class="fas fa-mountain me-2"></i>CPS
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="promotions.html">Promotions</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="reviews.html">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="membership.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="py-5 mt-5">
+        <div class="container">
+            <div class="glass-panel p-5 text-center">
+                <h1 class="display-4 fw-bold text-white mb-3">
+                    <i class="fas fa-envelope me-3"></i>Contact Us
+                </h1>
+                <p class="lead text-white-75">We're here to help with all your outdoor adventure needs</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4">
+                    <div class="glass-card h-100 text-center p-4">
+                        <div class="contact-icon mb-3">
+                            <i class="fas fa-map-marker-alt fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="text-white mb-3">Visit Our Stores</h5>
+                        <div class="text-white-75">
+                            <p class="mb-2"><strong>Boulder Location</strong><br>
+                            1234 Mountain View Drive<br>
+                            Boulder, CO 80301</p>
+                            <p class="mb-0"><strong>Denver Location</strong><br>
+                            5678 Outdoor Plaza<br>
+                            Denver, CO 80202</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="glass-card h-100 text-center p-4">
+                        <div class="contact-icon mb-3">
+                            <i class="fas fa-phone fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="text-white mb-3">Call Us</h5>
+                        <div class="text-white-75">
+                            <p class="mb-2"><strong>Main Line</strong><br>
+                            <a href="tel:+1-555-CAMPING" class="text-primary">(555) CAMPING</a></p>
+                            <p class="mb-2"><strong>Customer Service</strong><br>
+                            <a href="tel:+1-555-HELP-CPS" class="text-primary">(555) HELP-CPS</a></p>
+                            <p class="mb-0"><strong>Hours</strong><br>
+                            Mon-Sat: 9AM-8PM<br>
+                            Sun: 10AM-6PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="glass-card h-100 text-center p-4">
+                        <div class="contact-icon mb-3">
+                            <i class="fas fa-envelope fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="text-white mb-3">Email Us</h5>
+                        <div class="text-white-75">
+                            <p class="mb-2"><strong>General Inquiries</strong><br>
+                            <a href="mailto:info@campingproductssales.com" class="text-primary">info@campingproductssales.com</a></p>
+                            <p class="mb-2"><strong>Customer Support</strong><br>
+                            <a href="mailto:support@campingproductssales.com" class="text-primary">support@campingproductssales.com</a></p>
+                            <p class="mb-0"><strong>Partnerships</strong><br>
+                            <a href="mailto:partners@campingproductssales.com" class="text-primary">partners@campingproductssales.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="glass-panel p-5">
+                        <h3 class="text-white text-center mb-4">Send Us a Message</h3>
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label text-white">First Name *</label>
+                                    <input type="text" class="form-control glass-input" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label text-white">Last Name *</label>
+                                    <input type="text" class="form-control glass-input" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-white">Email Address *</label>
+                                    <input type="email" class="form-control glass-input" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-white">Phone Number</label>
+                                    <input type="tel" class="form-control glass-input">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-white">Subject *</label>
+                                    <select class="form-select glass-input" required>
+                                        <option value="">Select a subject...</option>
+                                        <option value="product-inquiry">Product Inquiry</option>
+                                        <option value="order-support">Order Support</option>
+                                        <option value="technical-support">Technical Support</option>
+                                        <option value="warranty-claim">Warranty Claim</option>
+                                        <option value="partnership">Partnership Opportunity</option>
+                                        <option value="feedback">Feedback</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label text-white">Message *</label>
+                                    <textarea class="form-control glass-input" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="newsletter">
+                                        <label class="form-check-label text-white-75" for="newsletter">
+                                            Subscribe to our newsletter for outdoor tips and exclusive offers
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary glass-btn btn-lg w-100">
+                                        <i class="fas fa-paper-plane me-2"></i>Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-white">Frequently Asked Questions</h2>
+                <p class="lead text-white-75">Quick answers to common questions</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item glass-card mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button glass-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    What is your return policy?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75">
+                                    We offer a 30-day return policy for all unused items in original packaging. For defective products, we provide lifetime warranty support and will repair or replace items as needed.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item glass-card mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button glass-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Do you offer gear testing services?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75">
+                                    Yes! All our products are tested by our team of outdoor professionals. We also offer personal gear consultations to help you choose the right equipment for your specific needs and adventures.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item glass-card mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button glass-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    What are your shipping options?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75">
+                                    We offer standard shipping (5-7 business days), expedited shipping (2-3 business days), and overnight shipping. Members enjoy free shipping on all orders, while non-members get free shipping on orders over $75.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item glass-card mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button glass-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    Do you price match?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75">
+                                    We'll match any competitor's price on identical items. Just contact us with the competitor's pricing information, and we'll match it plus give you an additional 5% off.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item glass-card mb-3">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button glass-btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Can I visit your physical stores?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-white-75">
+                                    Yes! We have two physical locations in Boulder and Denver, Colorado. You can visit us to see products in person, get expert advice, and attend our regular outdoor workshops and events.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media & Connect -->
+    <section class="py-5">
+        <div class="container">
+            <div class="glass-panel p-5 text-center">
+                <h3 class="text-white fw-bold mb-4">Connect With Us</h3>
+                <p class="text-white-75 mb-4">Follow us on social media for outdoor tips, gear reviews, and community adventures</p>
+                <div class="social-links-large">
+                    <a href="#" class="btn btn-outline-light glass-btn-outline btn-lg me-3 mb-3">
+                        <i class="fab fa-facebook fa-lg me-2"></i>Facebook
+                    </a>
+                    <a href="#" class="btn btn-outline-light glass-btn-outline btn-lg me-3 mb-3">
+                        <i class="fab fa-instagram fa-lg me-2"></i>Instagram
+                    </a>
+                    <a href="#" class="btn btn-outline-light glass-btn-outline btn-lg me-3 mb-3">
+                        <i class="fab fa-twitter fa-lg me-2"></i>Twitter
+                    </a>
+                    <a href="#" class="btn btn-outline-light glass-btn-outline btn-lg me-3 mb-3">
+                        <i class="fab fa-youtube fa-lg me-2"></i>YouTube
+                    </a>
+                    <a href="#" class="btn btn-outline-light glass-btn-outline btn-lg mb-3">
+                        <i class="fab fa-tiktok fa-lg me-2"></i>TikTok
+                    </a>
+                </div>
+            </section>
+
+    <!-- Map Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-white">Find Our Stores</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="glass-card p-4">
+                        <h5 class="text-white mb-3">Boulder Location</h5>
+                        <div class="store-info text-white-75 mb-3">
+                            <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>1234 Mountain View Drive, Boulder, CO 80301</p>
+                            <p class="mb-2"><i class="fas fa-phone me-2"></i>(555) 123-4567</p>
+                            <p class="mb-2"><i class="fas fa-clock me-2"></i>Mon-Sat: 9AM-8PM, Sun: 10AM-6PM</p>
+                        </div>
+                        <div class="map-placeholder bg-secondary rounded-3 d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <i class="fas fa-map fa-3x text-white-50"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="glass-card p-4">
+                        <h5 class="text-white mb-3">Denver Location</h5>
+                        <div class="store-info text-white-75 mb-3">
+                            <p class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>5678 Outdoor Plaza, Denver, CO 80202</p>
+                            <p class="mb-2"><i class="fas fa-phone me-2"></i>(555) 987-6543</p>
+                            <p class="mb-2"><i class="fas fa-clock me-2"></i>Mon-Sat: 9AM-8PM, Sun: 10AM-6PM</p>
+                        </div>
+                        <div class="map-placeholder bg-secondary rounded-3 d-flex align-items-center justify-content-center" style="height: 200px;">
+                            <i class="fas fa-map fa-3x text-white-50"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="glass-footer py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-3">
+                        <i class="fas fa-mountain me-2"></i>Camping Products Sales
+                    </h5>
+                    <p class="text-white-75">Your trusted partner for outdoor adventures since 1995. Quality gear for every expedition.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="text-white mb-3">Products</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="products.html?category=tents" class="text-white-75 text-decoration-none">Tents</a></li>
+                        <li><a href="products.html?category=cookware" class="text-white-75 text-decoration-none">Cookware</a></li>
+                        <li><a href="products.html?category=sleeping" class="text-white-75 text-decoration-none">Sleeping Gear</a></li>
+                        <li><a href="products.html?category=backpacks" class="text-white-75 text-decoration-none">Backpacks</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="text-white mb-3">Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white-75 text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-white-75 text-decoration-none">Contact</a></li>
+                        <li><a href="reviews.html" class="text-white-75 text-decoration-none">Reviews</a></li>
+                        <li><a href="membership.html" class="text-white-75 text-decoration-none">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="text-white mb-3">Newsletter</h6>
+                    <p class="text-white-75 mb-3">Stay updated with our latest products and outdoor tips</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control glass-input" placeholder="Enter your email">
+                        <button class="btn btn-primary glass-btn" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 border-white-25">
+            <div class="text-center">
+                <p class="text-white-75 mb-0">&copy; 2024 Camping Products Sales. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Contact form functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Simulate form submission
+                const submitBtn = this.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';
+                submitBtn.disabled = true;
+                
+                setTimeout(() => {
+                    alert('Thank you for your message! We\'ll get back to you within 24 hours.');
+                    contactForm.reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }, 2000);
+            });
+
+            // Accordion styling
+            const accordionButtons = document.querySelectorAll('.accordion-button');
+            accordionButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Reset all buttons
+                    accordionButtons.forEach(b => {
+                        b.classList.remove('btn-primary');
+                        b.classList.add('glass-btn');
+                    });
+                    
+                    // Highlight active button
+                    if (!this.classList.contains('collapsed')) {
+                        this.classList.add('btn-primary');
+                        this.classList.remove('glass-btn');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

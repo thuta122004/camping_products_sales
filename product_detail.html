@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine Pro Tent - Camping Products Sales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="index.html">
+                <i class="fas fa-mountain me-2"></i>CPS
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="promotions.html">Promotions</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="reviews.html">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="membership.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail -->
+    <section class="py-5 mt-5">
+        <div class="container">
+            <nav aria-label="breadcrumb" class="mb-4">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-white-75">Home</a></li>
+                    <li class="breadcrumb-item"><a href="products.html" class="text-white-75">Products</a></li>
+                    <li class="breadcrumb-item"><a href="products.html?category=tents" class="text-white-75">Tents</a></li>
+                    <li class="breadcrumb-item active text-white">Alpine Pro Tent</li>
+                </ol>
+            </nav>
+
+            <div class="glass-panel p-5">
+                <div class="row g-5">
+                    <div class="col-lg-6">
+                        <div class="product-images">
+                            <img src="/placeholder.svg?height=400&width=500" 
+                                 class="img-fluid rounded-4 mb-3" alt="Alpine Pro Tent" id="mainImage">
+                            <div class="row g-2">
+                                <div class="col-3">
+                                    <img src="/placeholder.svg?height=100&width=100" 
+                                         class="img-fluid rounded-3 thumbnail-img active" alt="Side View">
+                                </div>
+                                <div class="col-3">
+                                    <img src="/placeholder.svg?height=100&width=100" 
+                                         class="img-fluid rounded-3 thumbnail-img" alt="Interior">
+                                </div>
+                                <div class="col-3">
+                                    <img src="/placeholder.svg?height=100&width=100" 
+                                         class="img-fluid rounded-3 thumbnail-img" alt="Setup">
+                                </div>
+                                <div class="col-3">
+                                    <img src="/placeholder.svg?height=100&width=100" 
+                                         class="img-fluid rounded-3 thumbnail-img" alt="Packed">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="product-info">
+                            <h1 class="display-5 fw-bold text-white mb-3">Alpine Pro Tent</h1>
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="rating me-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <span class="text-white-75">(247 reviews)</span>
+                            </div>
+                            <div class="price mb-4">
+                                <span class="h2 text-primary fw-bold">$299.99</span>
+                                <span class="badge bg-success ms-3">In Stock</span>
+                            </div>
+                            <p class="lead text-white-75 mb-4">
+                                Professional-grade 4-season tent designed for extreme weather conditions. 
+                                Features advanced materials and engineering for serious outdoor enthusiasts.
+                            </p>
+                            
+                            <!-- Product Options -->
+                            <div class="mb-4">
+                                <h6 class="text-white mb-3">Color Options:</h6>
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-outline-light glass-btn-outline active" data-color="orange">Orange</button>
+                                    <button class="btn btn-outline-light glass-btn-outline" data-color="green">Green</button>
+                                    <button class="btn btn-outline-light glass-btn-outline" data-color="blue">Blue</button>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <h6 class="text-white mb-3">Quantity:</h6>
+                                <div class="input-group" style="width: 150px;">
+                                    <button class="btn btn-outline-light glass-btn-outline" type="button" id="decreaseQty">-</button>
+                                    <input type="number" class="form-control glass-input text-center" value="1" id="quantity">
+                                    <button class="btn btn-outline-light glass-btn-outline" type="button" id="increaseQty">+</button>
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons -->
+                            <div class="d-flex gap-3 mb-4">
+                                <button class="btn btn-primary glass-btn btn-lg flex-fill">
+                                    <i class="fas fa-shopping-cart me-2"></i>Add to Cart
+                                </button>
+                                <button class="btn btn-outline-light glass-btn-outline btn-lg">
+                                    <i class="fas fa-heart"></i>
+                                </button>
+                            </div>
+
+                            <!-- Product Features -->
+                            <div class="features">
+                                <h6 class="text-white mb-3">Key Features:</h6>
+                                <ul class="list-unstyled text-white-75">
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>4-season weather protection</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Lightweight aluminum poles</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Waterproof 3000mm rating</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Easy 10-minute setup</li>
+                                    <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Compact packed size</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Tabs -->
+    <section class="py-5">
+        <div class="container">
+            <div class="glass-panel p-4">
+                <ul class="nav nav-tabs border-0 mb-4" id="productTabs">
+                    <li class="nav-item">
+                        <button class="nav-link active glass-btn" data-bs-toggle="tab" data-bs-target="#description">Description</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link glass-btn-outline" data-bs-toggle="tab" data-bs-target="#specifications">Specifications</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link glass-btn-outline" data-bs-toggle="tab" data-bs-target="#reviews">Reviews</button>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="description">
+                        <div class="text-white-75">
+                            <h5 class="text-white mb-3">Product Description</h5>
+                            <p>The Alpine Pro Tent represents the pinnacle of camping shelter technology. Engineered for serious outdoor enthusiasts who demand reliability in extreme conditions, this tent combines cutting-edge materials with time-tested design principles.</p>
+                            <p>Whether you're facing howling winds on a mountain ridge or torrential rain in the backcountry, the Alpine Pro provides unwavering protection. The advanced pole system distributes stress evenly, while the premium fabric resists tears and maintains waterproofing season after season.</p>
+                            <h6 class="text-white mt-4 mb-3">What's Included:</h6>
+                            <ul>
+                                <li>Alpine Pro Tent body</li>
+                                <li>Rainfly with guy-out points</li>
+                                <li>Aluminum pole set</li>
+                                <li>Stakes and guylines</li>
+                                <li>Repair kit</li>
+                                <li>Compression stuff sack</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="specifications">
+                        <div class="text-white-75">
+                            <h5 class="text-white mb-3">Technical Specifications</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <table class="table table-borderless text-white-75">
+                                        <tr><td><strong>Capacity:</strong></td><td>2 Person</td></tr>
+                                        <tr><td><strong>Seasons:</strong></td><td>4-Season</td></tr>
+                                        <tr><td><strong>Weight:</strong></td><td>4.2 lbs (1.9 kg)</td></tr>
+                                        <tr><td><strong>Packed Size:</strong></td><td>18" x 6" (46 x 15 cm)</td></tr>
+                                        <tr><td><strong>Floor Area:</strong></td><td>28.5 sq ft (2.6 sq m)</td></tr>
+                                    </table>
+                                </div>
+                                <div class="col-md-6">
+                                    <table class="table table-borderless text-white-75">
+                                        <tr><td><strong>Peak Height:</strong></td><td>42" (107 cm)</td></tr>
+                                        <tr><td><strong>Waterproof Rating:</strong></td><td>3000mm</td></tr>
+                                        <tr><td><strong>Pole Material:</strong></td><td>7001-T6 Aluminum</td></tr>
+                                        <tr><td><strong>Fabric:</strong></td><td>20D Ripstop Nylon</td></tr>
+                                        <tr><td><strong>Warranty:</strong></td><td>Lifetime</td></tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="reviews">
+                        <div class="reviews-section">
+                            <div class="d-flex justify-content-between align-items-center mb-4">
+                                <h5 class="text-white">Customer Reviews (247)</h5>
+                                <button class="btn btn-primary glass-btn" data-bs-toggle="modal" data-bs-target="#reviewModal">
+                                    Write a Review
+                                </button>
+                            </div>
+                            
+                            <!-- Review Summary -->
+                            <div class="glass-card p-4 mb-4">
+                                <div class="row align-items-center">
+                                    <div class="col-md-3 text-center">
+                                        <div class="h2 text-primary mb-0">4.8</div>
+                                        <div class="rating mb-2">
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                            <i class="fas fa-star text-warning"></i>
+                                        </div>
+                                        <div class="text-white-75">247 reviews</div>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="rating-breakdown">
+                                            <div class="d-flex align-items-center mb-2">
+                                                <span class="text-white-75 me-2">5 stars</span>
+                                                <div class="progress flex-fill me-2" style="height: 8px;">
+                                                    <div class="progress-bar bg-warning" style="width: 85%"></div>
+                                                </div>
+                                                <span class="text-white-75">210</span>
+                                            </div>
+                                            <div class="d-flex align-items-center mb-2">
+                                                <span class="text-white-75 me-2">4 stars</span>
+                                                <div class="progress flex-fill me-2" style="height: 8px;">
+                                                    <div class="progress-bar bg-warning" style="width: 12%"></div>
+                                                </div>
+                                                <span class="text-white-75">30</span>
+                                            </div>
+                                            <div class="d-flex align-items-center mb-2">
+                                                <span class="text-white-75 me-2">3 stars</span>
+                                                <div class="progress flex-fill me-2" style="height: 8px;">
+                                                    <div class="progress-bar bg-warning" style="width: 2%"></div>
+                                                </div>
+                                                <span class="text-white-75">5</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Individual Reviews -->
+                            <div class="reviews-list">
+                                <div class="glass-card p-4 mb-3">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <div>
+                                            <h6 class="text-white mb-1">Sarah M.</h6>
+                                            <div class="rating">
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <small class="text-white-50">2 weeks ago</small>
+                                    </div>
+                                    <p class="text-white-75 mb-0">Absolutely love this tent! Used it on a 5-day backpacking trip in the Rockies and it performed flawlessly. Easy setup even in windy conditions.</p>
+                                </div>
+
+                                <div class="glass-card p-4 mb-3">
+                                    <div class="d-flex justify-content-between align-items-start mb-3">
+                                        <div>
+                                            <h6 class="text-white mb-1">Mike R.</h6>
+                                            <div class="rating">
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                                <i class="fas fa-star text-warning"></i>
+                                            </div>
+                                        </div>
+                                        <small class="text-white-50">1 month ago</small>
+                                    </div>
+                                    <p class="text-white-75 mb-0">Quality construction and materials. Worth every penny for serious camping. The waterproofing is excellent - stayed completely dry during a heavy storm.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="py-5">
+        <div class="container">
+            <h3 class="text-white fw-bold mb-4">Related Products</h3>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="glass-card product-card h-100">
+                        <img src="/placeholder.svg?height=200&width=300" 
+                             class="card-img-top" alt="Sleeping Bag">
+                        <div class="card-body p-4">
+                            <h6 class="card-title text-white">Summit Sleeping Bag</h6>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h6 text-primary mb-0">$199.99</span>
+                                <a href="#" class="btn btn-sm btn-primary glass-btn">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="glass-card product-card h-100">
+                        <img src="/placeholder.svg?height=200&width=300" 
+                             class="card-img-top" alt="Backpack">
+                        <div class="card-body p-4">
+                            <h6 class="card-title text-white">Explorer Backpack</h6>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h6 text-primary mb-0">$149.99</span>
+                                <a href="#" class="btn btn-sm btn-primary glass-btn">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="glass-card product-card h-100">
+                        <img src="/placeholder.svg?height=200&width=300" 
+                             class="card-img-top" alt="Camp Stove">
+                        <div class="card-body p-4">
+                            <h6 class="card-title text-white">Portable Camp Stove</h6>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h6 text-primary mb-0">$45.99</span>
+                                <a href="#" class="btn btn-sm btn-primary glass-btn">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="glass-card product-card h-100">
+                        <img src="/placeholder.svg?height=200&width=300" 
+                             class="card-img-top" alt="LED Lantern">
+                        <div class="card-body p-4">
+                            <h6 class="card-title text-white">LED Camping Lantern</h6>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="h6 text-primary mb-0">$37.49</span>
+                                <a href="#" class="btn btn-sm btn-primary glass-btn">View</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review Modal -->
+    <div class="modal fade" id="reviewModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content glass-panel border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title text-white">Write a Review</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label text-white">Rating</label>
+                            <div class="rating-input">
+                                <i class="far fa-star text-warning" data-rating="1"></i>
+                                <i class="far fa-star text-warning" data-rating="2"></i>
+                                <i class="far fa-star text-warning" data-rating="3"></i>
+                                <i class="far fa-star text-warning" data-rating="4"></i>
+                                <i class="far fa-star text-warning" data-rating="5"></i>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-white">Name</label>
+                            <input type="text" class="form-control glass-input">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-white">Review</label>
+                            <textarea class="form-control glass-input" rows="4"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-outline-light glass-btn-outline" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary glass-btn">Submit Review</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="glass-footer py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-3">
+                        <i class="fas fa-mountain me-2"></i>Camping Products Sales
+                    </h5>
+                    <p class="text-white-75">Your trusted partner for outdoor adventures since 1995.</p>
+                </div>
+                <div class="col-lg-8">
+                    <div class="text-center">
+                        <p class="text-white-75 mb-0">&copy; 2024 Camping Products Sales. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Product detail page functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Thumbnail image switching
+            const thumbnails = document.querySelectorAll('.thumbnail-img');
+            const mainImage = document.getElementById('mainImage');
+
+            thumbnails.forEach(thumb => {
+                thumb.addEventListener('click', function() {
+                    thumbnails.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    mainImage.src = this.src.replace('100&width=100', '400&width=500');
+                });
+            });
+
+            // Quantity controls
+            const decreaseBtn = document.getElementById('decreaseQty');
+            const increaseBtn = document.getElementById('increaseQty');
+            const quantityInput = document.getElementById('quantity');
+
+            decreaseBtn.addEventListener('click', function() {
+                let qty = parseInt(quantityInput.value);
+                if (qty > 1) {
+                    quantityInput.value = qty - 1;
+                }
+            });
+
+            increaseBtn.addEventListener('click', function() {
+                let qty = parseInt(quantityInput.value);
+                quantityInput.value = qty + 1;
+            });
+
+            // Color selection
+            const colorBtns = document.querySelectorAll('[data-color]');
+            colorBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    colorBtns.forEach(b => {
+                        b.classList.remove('active', 'btn-primary');
+                        b.classList.add('btn-outline-light', 'glass-btn-outline');
+                    });
+                    this.classList.add('active', 'btn-primary');
+                    this.classList.remove('btn-outline-light', 'glass-btn-outline');
+                });
+            });
+
+            // Rating input
+            const ratingStars = document.querySelectorAll('.rating-input i');
+            ratingStars.forEach(star => {
+                star.addEventListener('click', function() {
+                    const rating = parseInt(this.getAttribute('data-rating'));
+                    ratingStars.forEach((s, index) => {
+                        if (index < rating) {
+                            s.classList.remove('far');
+                            s.classList.add('fas');
+                        } else {
+                            s.classList.remove('fas');
+                            s.classList.add('far');
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership - Camping Products Sales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="index.html">
+                <i class="fas fa-mountain me-2"></i>CPS
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="promotions.html">Promotions</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="reviews.html">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link text-white active" href="membership.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="py-5 mt-5">
+        <div class="container">
+            <div class="glass-panel p-5 text-center">
+                <h1 class="display-4 fw-bold text-white mb-3">
+                    <i class="fas fa-users me-3"></i>Join the CPS Community
+                </h1>
+                <p class="lead text-white-75">Unlock exclusive benefits and connect with fellow outdoor enthusiasts</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Benefits -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-white">Membership Benefits</h2>
+                <p class="lead text-white-75">Everything you need for your outdoor adventures</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card h-100 text-center p-4">
+                        <div class="benefit-icon mb-3">
+                            <i class="fas fa-percentage fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="text-white mb-3">Exclusive Discounts</h5>
+                        <p class="text-white-75">Get 15% off all purchases plus early access to sales and special promotions</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card h-100 text-center p-4">
+                        <div class="benefit-icon mb-3">
+                            <i class="fas fa-shipping-fast fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="text-white mb-3">Free Shipping</h5>
+                        <p class="text-white-75">Enjoy free shipping on all orders, no minimum purchase required</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card h-100 text-center p-4">
+                        <div class="benefit-icon mb-3">
+                            <i class="fas fa-star fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="text-white mb-3">Priority Support</h5>
+                        <p class="text-white-75">Get priority customer support and expert advice from our outdoor specialists</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card h-100 text-center p-4">
+                        <div class="benefit-icon mb-3">
+                            <i class="fas fa-gift fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="text-white mb-3">Birthday Rewards</h5>
+                        <p class="text-white-75">Receive special birthday discounts and surprise gifts throughout the year</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card h-100 text-center p-4">
+                        <div class="benefit-icon mb-3">
+                            <i class="fas fa-calendar-alt fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="text-white mb-3">Exclusive Events</h5>
+                        <p class="text-white-75">Access to member-only camping trips, workshops, and outdoor events</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="glass-card h-100 text-center p-4">
+                        <div class="benefit-icon mb-3">
+                            <i class="fas fa-book fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="text-white mb-3">Expert Guides</h5>
+                        <p class="text-white-75">Access to exclusive camping guides, tips, and destination recommendations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration/Login Forms -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="glass-panel p-5">
+                        <!-- Tab Navigation -->
+                        <ul class="nav nav-tabs border-0 mb-4 justify-content-center" id="membershipTabs">
+                            <li class="nav-item">
+                                <button class="nav-link active glass-btn" data-bs-toggle="tab" data-bs-target="#register">Create Account</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link glass-btn-outline" data-bs-toggle="tab" data-bs-target="#login">Sign In</button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <!-- Registration Form -->
+                            <div class="tab-pane fade show active" id="register">
+                                <h4 class="text-white text-center mb-4">Create Your CPS Account</h4>
+                                <form id="registrationForm">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label text-white">First Name</label>
+                                            <input type="text" class="form-control glass-input" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label text-white">Last Name</label>
+                                            <input type="text" class="form-control glass-input" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label text-white">Email Address</label>
+                                            <input type="email" class="form-control glass-input" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label text-white">Password</label>
+                                            <input type="password" class="form-control glass-input" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label text-white">Confirm Password</label>
+                                            <input type="password" class="form-control glass-input" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label text-white">Phone Number</label>
+                                            <input type="tel" class="form-control glass-input">
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label text-white">Camping Experience Level</label>
+                                            <select class="form-select glass-input">
+                                                <option>Select your experience level</option>
+                                                <option>Beginner</option>
+                                                <option>Intermediate</option>
+                                                <option>Advanced</option>
+                                                <option>Expert</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label text-white">Favorite Camping Activities</label>
+                                            <div class="row g-2">
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="hiking">
+                                                        <label class="form-check-label text-white-75" for="hiking">Hiking</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="backpacking">
+                                                        <label class="form-check-label text-white-75" for="backpacking">Backpacking</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="carCamping">
+                                                        <label class="form-check-label text-white-75" for="carCamping">Car Camping</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="fishing">
+                                                        <label class="form-check-label text-white-75" for="fishing">Fishing</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="climbing">
+                                                        <label class="form-check-label text-white-75" for="climbing">Rock Climbing</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="photography">
+                                                        <label class="form-check-label text-white-75" for="photography">Photography</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="newsletter" checked>
+                                                <label class="form-check-label text-white-75" for="newsletter">
+                                                    Subscribe to our newsletter for camping tips and exclusive offers
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" id="terms" required>
+                                                <label class="form-check-label text-white-75" for="terms">
+                                                    I agree to the <a href="#" class="text-primary">Terms of Service</a> and <a href="#" class="text-primary">Privacy Policy</a>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary glass-btn btn-lg w-100">
+                                                <i class="fas fa-user-plus me-2"></i>Create Account
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- Login Form -->
+                            <div class="tab-pane fade" id="login">
+                                <h4 class="text-white text-center mb-4">Welcome Back!</h4>
+                                <form id="loginForm">
+                                    <div class="mb-3">
+                                        <label class="form-label text-white">Email Address</label>
+                                        <input type="email" class="form-control glass-input" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label text-white">Password</label>
+                                        <input type="password" class="form-control glass-input" required>
+                                    </div>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                                        <label class="form-check-label text-white-75" for="rememberMe">
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary glass-btn btn-lg w-100 mb-3">
+                                        <i class="fas fa-sign-in-alt me-2"></i>Sign In
+                                    </button>
+                                    <div class="text-center">
+                                        <a href="#" class="text-primary">Forgot your password?</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Member Dashboard Preview -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-white">Your Member Dashboard</h2>
+                <p class="lead text-white-75">Preview of what you'll have access to as a member</p>
+            </div>
+            <div class="glass-panel p-5">
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="glass-card p-4 text-center">
+                            <i class="fas fa-shopping-bag fa-2x text-primary mb-3"></i>
+                            <h6 class="text-white mb-2">Order History</h6>
+                            <p class="text-white-75 small">Track all your purchases and reorder favorites</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="glass-card p-4 text-center">
+                            <i class="fas fa-heart fa-2x text-primary mb-3"></i>
+                            <h6 class="text-white mb-2">Wishlist</h6>
+                            <p class="text-white-75 small">Save products for later and get notified of sales</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="glass-card p-4 text-center">
+                            <i class="fas fa-map-marked-alt fa-2x text-primary mb-3"></i>
+                            <h6 class="text-white mb-2">Trip Planner</h6>
+                            <p class="text-white-75 small">Plan your adventures and get gear recommendations</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="glass-card p-4 text-center">
+                            <i class="fas fa-trophy fa-2x text-primary mb-3"></i>
+                            <h6 class="text-white mb-2">Rewards Points</h6>
+                            <p class="text-white-75 small">Earn points with every purchase and redeem for discounts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-white">What Our Members Say</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="glass-card p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="/placeholder.svg?height=50&width=50" 
+                                 class="rounded-circle me-3" alt="Member" width="50" height="50">
+                            <div>
+                                <h6 class="text-white mb-0">Sarah Johnson</h6>
+                                <small class="text-white-50">Member since 2022</small>
+                            </div>
+                        </div>
+                        <p class="text-white-75">"The member discounts have saved me hundreds of dollars on gear. Plus, the exclusive camping events are amazing - I've made so many new friends!"</p>
+                        <div class="rating">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="glass-card p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="/placeholder.svg?height=50&width=50" 
+                                 class="rounded-circle me-3" alt="Member" width="50" height="50">
+                            <div>
+                                <h6 class="text-white mb-0">Mike Rodriguez</h6>
+                                <small class="text-white-50">Member since 2021</small>
+                            </div>
+                        </div>
+                        <p class="text-white-75">"The priority support is incredible. When I had questions about setting up my new tent, they walked me through it step by step. Outstanding service!"</p>
+                        <div class="rating">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="glass-card p-4 h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="/placeholder.svg?height=50&width=50" 
+                                 class="rounded-circle me-3" alt="Member" width="50" height="50">
+                            <div>
+                                <h6 class="text-white mb-0">Lisa Chen</h6>
+                                <small class="text-white-50">Member since 2020</small>
+                            </div>
+                        </div>
+                        <p class="text-white-75">"Free shipping on everything has been a game-changer for our family camping trips. We order gear throughout the year without worrying about shipping costs."</p>
+                        <div class="rating">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="glass-footer py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-3">
+                        <i class="fas fa-mountain me-2"></i>Camping Products Sales
+                    </h5>
+                    <p class="text-white-75">Your trusted partner for outdoor adventures since 1995. Quality gear for every expedition.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="text-white mb-3">Products</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="products.html?category=tents" class="text-white-75 text-decoration-none">Tents</a></li>
+                        <li><a href="products.html?category=cookware" class="text-white-75 text-decoration-none">Cookware</a></li>
+                        <li><a href="products.html?category=sleeping" class="text-white-75 text-decoration-none">Sleeping Gear</a></li>
+                        <li><a href="products.html?category=backpacks" class="text-white-75 text-decoration-none">Backpacks</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="text-white mb-3">Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-white-75 text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-white-75 text-decoration-none">Contact</a></li>
+                        <li><a href="reviews.html" class="text-white-75 text-decoration-none">Reviews</a></li>
+                        <li><a href="membership.html" class="text-white-75 text-decoration-none">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h6 class="text-white mb-3">Newsletter</h6>
+                    <p class="text-white-75 mb-3">Stay updated with our latest products and outdoor tips</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control glass-input" placeholder="Enter your email">
+                        <button class="btn btn-primary glass-btn" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 border-white-25">
+            <div class="text-center">
+                <p class="text-white-75 mb-0">&copy; 2024 Camping Products Sales. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Membership page functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Form validation
+            const registrationForm = document.getElementById('registrationForm');
+            const loginForm = document.getElementById('loginForm');
+
+            registrationForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                // Simulate account creation
+                alert('Account created successfully! Welcome to the CPS community!');
+            });
+
+            loginForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                // Simulate login
+                alert('Welcome back! You are now signed in.');
+            });
+
+            // Tab switching
+            const tabButtons = document.querySelectorAll('#membershipTabs button');
+            tabButtons.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    tabButtons.forEach(b => {
+                        b.classList.remove('active', 'btn-primary');
+                        b.classList.add('glass-btn-outline');
+                    });
+                    this.classList.add('active', 'btn-primary');
+                    this.classList.remove('glass-btn-outline');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

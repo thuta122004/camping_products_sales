@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Camping Products Sales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top glass-nav">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="index.html">
+                <i class="fas fa-mountain me-2"></i>CPS
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link text-white active" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="promotions.html">Promotions</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="reviews.html">Reviews</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="membership.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="py-5 mt-5">
+        <div class="container">
+            <div class="glass-panel p-5 text-center">
+                <h1 class="display-4 fw-bold text-white mb-3">Our Products</h1>
+                <p class="lead text-white-75">Discover premium camping gear for every adventure</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="py-4">
+        <div class="container">
+            <div class="glass-panel p-4">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <div class="d-flex flex-wrap gap-2">
+                            <button class="btn btn-primary glass-btn filter-btn active" data-filter="all">All Products</button>
+                            <button class="btn btn-outline-light glass-btn-outline filter-btn" data-filter="tents">Tents</button>
+                            <button class="btn btn-outline-light glass-btn-outline filter-btn" data-filter="cookware">Cookware</button>
+                            <button class="btn btn-outline-light glass-btn-outline filter-btn" data-filter="sleeping">Sleeping Gear</button>
+                            <button class="btn btn-outline-light glass-btn-outline filter-btn" data-filter="backpacks">Backpacks</button>
+                            <button class="btn btn-outline-light glass-btn-outline filter-btn" data-filter="accessories">Accessories</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-select glass-input" id="sortSelect">
+                            <option value="name">Sort by Name</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="rating">Highest Rated</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Grid -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4" id="productsGrid">
+                <!-- Tents -->
+                <div class="col-lg-3 col-md-6 product-item" data-category="tents" data-price="299.99" data-rating="5">
+                    <div class="glass-card product-card h-100">
+                        <img src="/placeholder.svg?height=200&width=300" 
+                             class="card-img-top" alt="Alpine Pro Tent">
+                        <div class="card-body p-4">
+                            <h5 class="card-title text-white">Alpine Pro Tent</h5>
+                            <p class="card-text text-white-75">4-season professional tent for extreme conditions</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="h5 text-primary mb-0">$299.99</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                            </div>
+                            <a href="product_detail.html?id=1" class="btn btn-primary glass-btn w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 product-item" data-category="tents" data-price="199.99" data-rating="4">
+                    <div class="glass-card product-card h-100">
+                        <img src="/placeholder.svg?height=200&width=300" 
+                             class="card-img-top" alt="Family Dome Tent">
+                        <div class="card-body p-4">
+                            <h5 class="card-title text-white">Family Dome Tent</h5>
+                            <p class="card-text text-white-75">Spacious 6-person tent with easy setup</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="h5 text-primary mb-0">$199.99</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                </div>
+                            </div>
+                            <a href="product_detail.html?id=2" class="btn btn-primary glass-btn w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cookware -->
+                <div class="col-lg-3 col-md-6 product-item" data-category="cookware" data-price="89.99" data-rating="4">
+                    <div class="glass-card product-card h-100">
+                        <img src="/placeholder.svg?height=200&width=300" 
+                             class="card-img-top" alt="Trail Chef Set">
+                        <div class="card-body p-4">
+                            <h5 class="card-title text-white">Trail Chef Set</h5>
+                            <p class="card-text text-white-75">Complete cooking kit for 4 people</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="h5 text-primary mb-0">$89.99</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                </div>
+                            </div>
+                            <a href="product_detail.html?id=3" class="btn btn-primary glass-btn w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 product-item" data-category="cookware" data-price="45.99" data-rating="5">
+                    <div class="glass-card product-card h-100">
+                        <img src="/placeholder.svg?height=200&width=300" 
+                             class="card-img-top" alt="Portable Camp Stove">
+                        <div class="card-body p-4">
+                            <h5 class="card-title text-white">Portable Camp Stove</h5>
+                            <p class="card-text text-white-75">Lightweight gas stove with wind shield</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="h5 text-primary mb-0">$45.99</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                            </div>
+                            <a href="product_detail.html?id=4" class="btn btn-primary glass-btn w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sleeping Gear -->
+                <div class="col-lg-3 col-md-6 product-item" data-category="sleeping" data-price="199.99" data-rating="5">
+                    <div class="glass-card product-card h-100">
+                        <img src="/placeholder.svg?height=200&width=300" 
+                             class="card-img-top" alt="Summit Sleeping Bag">
+                        <div class="card-body p-4">
+                            <h5 class="card-title text-white">Summit Sleeping Bag</h5>
+                            <p class="card-text text-white-75">-10°F rated down sleeping bag</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="h5 text-primary mb-0">$199.99</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                            </div>
+                            <a href="product_detail.html?id=5" class="btn btn-primary glass-btn w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 product-item" data-category="sleeping" data-price="79.99" data-rating="4">
+                    <div class="glass-card product-card h-100">
+                        <img src="/placeholder.svg?height=200&width=300" 
+                             class="card-img-top" alt="Comfort Sleep Pad">
+                        <div class="card-body p-4">
+                            <h5 class="card-title text-white">Comfort Sleep Pad</h5>
+                            <p class="card-text text-white-75">Self-inflating sleeping pad with pillow</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="h5 text-primary mb-0">$79.99</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                </div>
+                            </div>
+                            <a href="product_detail.html?id=6" class="btn btn-primary glass-btn w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backpacks -->
+                <div class="col-lg-3 col-md-6 product-item" data-category="backpacks" data-price="149.99" data-rating="4">
+                    <div class="glass-card product-card h-100">
+                        <img src="/placeholder.svg?height=200&width=300" 
+                             class="card-img-top" alt="Explorer Backpack">
+                        <div class="card-body p-4">
+                            <h5 class="card-title text-white">Explorer Backpack</h5>
+                            <p class="card-text text-white-75">65L multi-day hiking backpack</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="h5 text-primary mb-0">$149.99</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="far fa-star text-warning"></i>
+                                </div>
+                            </div>
+                            <a href="product_detail.html?id=7" class="btn btn-primary glass-btn w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 product-item" data-category="backpacks" data-price="89.99" data-rating="5">
+                    <div class="glass-card product-card h-100">
+                        <img src="/placeholder.svg?height=200&width=300" 
+                             class="card-img-top" alt="Day Hiker Pack">
+                        <div class="card-body p-4">
+                            <h5 class="card-title text-white">Day Hiker Pack</h5>
+                            <p class="card-text text-white-75">30L daypack with hydration system</p>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span class="h5 text-primary mb-0">$89.99</span>
+                                <div class="rating">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                            </div>
+                            <a href="product_detail.html?id=8" class="btn btn-primary glass-btn w-100">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="glass-footer py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="text-white mb-3">
+                        <i class="fas fa-mountain me-2"></i>Camping Products Sales
+                    </h5>
+                    <p class="text-white-75">Your trusted partner for outdoor adventures since 1995.</p>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h6 class="text-white mb-3">Products</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="text-white-75 text-decoration-none">Tents</a></li>
+                                <li><a href="#" class="text-white-75 text-decoration-none">Cookware</a></li>
+                                <li><a href="#" class="text-white-75 text-decoration-none">Sleeping Gear</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h6 class="text-white mb-3">Company</h6>
+                            <ul class="list-unstyled">
+                                <li><a href="about.html" class="text-white-75 text-decoration-none">About</a></li>
+                                <li><a href="contact.html" class="text-white-75 text-decoration-none">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="social-links">
+                                <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Product filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const productItems = document.querySelectorAll('.product-item');
+            const sortSelect = document.getElementById('sortSelect');
+
+            // Filter functionality
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Update active button
+                    filterBtns.forEach(b => {
+                        b.classList.remove('active', 'btn-primary');
+                        b.classList.add('btn-outline-light', 'glass-btn-outline');
+                    });
+                    this.classList.add('active', 'btn-primary');
+                    this.classList.remove('btn-outline-light', 'glass-btn-outline');
+                    
+                    // Filter products
+                    productItems.forEach(item => {
+                        if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Sort functionality
+            sortSelect.addEventListener('change', function() {
+                const sortBy = this.value;
+                const grid = document.getElementById('productsGrid');
+                const items = Array.from(productItems);
+
+                items.sort((a, b) => {
+                    switch(sortBy) {
+                        case 'price-low':
+                            return parseFloat(a.getAttribute('data-price')) - parseFloat(b.getAttribute('data-price'));
+                        case 'price-high':
+                            return parseFloat(b.getAttribute('data-price')) - parseFloat(a.getAttribute('data-price'));
+                        case 'rating':
+                            return parseInt(b.getAttribute('data-rating')) - parseInt(a.getAttribute('data-rating'));
+                        case 'name':
+                        default:
+                            return a.querySelector('.card-title').textContent.localeCompare(b.querySelector('.card-title').textContent);
+                    }
+                });
+
+                items.forEach(item => grid.appendChild(item));
+            });
+        });
+    </script>
+</body>
+</html>

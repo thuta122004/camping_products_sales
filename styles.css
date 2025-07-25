@@ -24,7 +24,7 @@
 
 body {
   font-family: "Inter", sans-serif;
-  background: url("images/4473a64b10d66699526d9f5581e16be2.jpg") center / cover no-repeat;
+  background: url("images/Background.jpg") center / cover no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
   overflow-x: hidden;
@@ -126,7 +126,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: url("/placeholder.svg?height=1080&width=1920") center / cover;
+  background: url("/images/HeroBg.jpg") center / cover;
   opacity: 0.3;
   z-index: -1;
 }
@@ -261,6 +261,16 @@ body {
 }
 .text-forest {
   color: var(--primary-dark) !important;
+}
+
+/* Table */
+.table-transparent {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.table-transparent td,
+.table-transparent th {
+  background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 /* Category Icons */
